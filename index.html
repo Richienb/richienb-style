@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Richienb Issues</title>
+    <meta name="description" content="This is a list of issues related to the Richienb repository.">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel='stylesheet' href='https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.css'>
+
+    <style>
+        :root {
+            --mdc-theme-primary: #3f51b5;
+            --mdc-theme-secondary: #f44336;
+            --mdc-theme-on-primary: #ffffff;
+            --mdc-theme-on-secondary: #ffffff;
+        }
+        
+        :root body {
+            background-color: #3f51b5;
+        }
+        
+        :root body main {
+            background-color: #ffffff;
+            border-radius: 4px;
+            position: absolute;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            min-width: calc(100vw - 80px);
+            min-height: calc(100vh - 80px);
+            padding: 20px;
+        }
+        
+        :root body main .mdc-tab-bar {
+            padding-bottom: 20px;
+        }
+        
+        :root body main div.mdc-text-field.mdc-text-field--outlined {
+            width: 100%;
+        }
+    </style>
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+
+</head>
+
+<body>
+
+    <main class="mdc-typography">
+        <h1 class="mdc-typography--headline1">Richienb Issues</h1>
+        <p class="mdc-typography--body1">This is a list of issues related to the Richienb repository.</p>
+        <ul id="issues-list" class="mdc-list mdc-list--two-line" aria-orientation="vertical">
+        </ul>
+    </main>
+    <script async src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js'></script>
+    <script src='https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script>
+        $.when($.getJSON("https://api.github.com/repos/Richienb/richienb/issues", function(data) {
+            for (var i = 0; i < data.length; i++) {
+                console.log(data[i]);
+                $("#issues-list").append('<a target="_blank" rel="noopener" href="' + data[i].html_url + '" class="mdc-list-item" data-mdc-auto-init="MDCRipple"><span class="mdc-list-item__text"><span class="mdc-list-item__primary-text">' + data[i].title + '</span><span class="mdc-list-item__secondary-text">' + data[i].body.substring(0, 75) + "...</span></span></a>");
+            }
+        })).then(function() {
+            window.mdc.autoInit();
+        });
+    </script>
+
+</body>
+
+</html>
