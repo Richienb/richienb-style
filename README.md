@@ -8,10 +8,13 @@ Main feedback and discussion repository
 
 ## Style guide
 
-Here is an [example](https://codepen.io/Richienb/full/gqrEdR) of the current design standard (version 2.1) for services designed by Richie Bendall.
+Here is an [example](https://codepen.io/Richienb/full/gqrEdR) of the current cutting edge design standard (version 2.1) for services designed by Richie Bendall.
 
-### Older versions
+As a fallback, an [older version](https://codepen.io/Richienb/full/ZwOGRX) (version 2.0-rv1) can be used.
 
+### All versions
+
+- [Version 2.1](https://codepen.io/Richienb/full/gqrEdR)
 - [Version 2.0-rv1](https://codepen.io/Richienb/full/ZwOGRX)
 - [Version 2.0](https://codepen.io/Richienb/full/wNwrrN)
 - [Version 1.0](https://codepen.io/Richienb/full/XqObQO)
