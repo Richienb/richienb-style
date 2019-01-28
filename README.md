@@ -12,5 +12,6 @@ Here is an [example](https://codepen.io/Richienb/full/gqrEdR) of the current des
 
 ### Older versions
 
+- [Version 2.0-rv1](https://codepen.io/Richienb/full/ZwOGRX)
 - [Version 2.0](https://codepen.io/Richienb/full/wNwrrN)
 - [Version 1.0](https://codepen.io/Richienb/full/XqObQO)
