@@ -16,6 +16,7 @@ As a fallback, an [older version](https://codepen.io/Richienb/full/ZwOGRX) (vers
 
 - [Version 2.1](https://codepen.io/Richienb/full/gqrEdR)
 - [Version 2.0-rv1](https://codepen.io/Richienb/full/ZwOGRX)
+- [Version 2.0-ext-app](https://codepen.io/Richienb/full/pqJObB)
 - [Version 2.0](https://codepen.io/Richienb/full/wNwrrN)
 - [Version 1.0-ext-card](https://codepen.io/Richienb/full/mvEJod)
 - [Version 1.0](https://codepen.io/Richienb/full/XqObQO)
