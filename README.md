@@ -22,3 +22,5 @@ As a fallback, an [older version](https://codepen.io/Richienb/full/gqLPzG) (vers
 - [Version 2.0](https://codepen.io/Richienb/full/wNwrrN) (Quilt)
 - [Version 1.0-ext-card](https://codepen.io/Richienb/full/mvEJod) (Droplet)
 - [Version 1.0](https://codepen.io/Richienb/full/XqObQO) (Droplet)
+- Version 0.2 - GitHub README.md preprocessor with Jekyll Cayman theme (Veteran)
+- Version 0.1 - GitHub README.md preprocessor (Veteran)
