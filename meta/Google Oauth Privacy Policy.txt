@@ -1,0 +1,1 @@
+The rules are simple. All data you give us will be processed by Auth0. Apart from that, your data will not be sold or distributed by any means. For more info, contact richiebendall@gmail.com
