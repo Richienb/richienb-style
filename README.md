@@ -4,17 +4,18 @@ Main feedback and discussion repository
 
 ## How you can help
 
-- Update frameworks and for breaking updates, to update the code as well
+- Keep all the libraries up to date along with the code.
 
 ## Style guide
 
-Here is an [example](https://codepen.io/Richienb/full/dawzQR) of the current cutting edge design standard (version 2.1-rv3) for services designed by Richie Bendall.
+Here is an [example](https://codepen.io/Richienb/full/wZwPxL) of the current cutting edge design standard (version 2.2) for services designed by Richie Bendall.
 
 As a fallback, an [older version](https://codepen.io/Richienb/full/gqLPzG) (version 2.0-rv2) can be used.
 
 ### All versions
 
-- [Version 2.1-rv3](https://codepen.io/Richienb/full/dawzQR) (Light) (Latest)
+- [Version 2.2](https://codepen.io/Richienb/full/wZwPxL) (Light) (Latest)
+- [Version 2.1-rv3](https://codepen.io/Richienb/full/dawzQR) (Light)
 - [Version 2.1-rv2](https://codepen.io/Richienb/full/VgPKpY) (Light)
 - [Version 2.1-rv1](https://codepen.io/Richienb/full/omYZNv) (Light)
 - [Version 2.1](https://codepen.io/Richienb/full/gqrEdR) (Light)
