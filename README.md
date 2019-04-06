@@ -14,6 +14,7 @@ As a fallback, an [older version](https://codepen.io/Richienb/full/gqLPzG) (vers
 
 ### All versions
 
+- [Version 2.2-ext-jquery](https://codepen.io/Richienb/full/oOLpmx) (Light)
 - [Version 2.2](https://codepen.io/Richienb/full/wZwPxL) (Light) (Latest)
 - [Version 2.1-rv3](https://codepen.io/Richienb/full/dawzQR) (Light)
 - [Version 2.1-rv2](https://codepen.io/Richienb/full/VgPKpY) (Light)
