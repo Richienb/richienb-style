@@ -9,69 +9,209 @@
     <title>Richienb Issues</title>
     <meta name="description" content="This is a list of issues related to the Richienb repository.">
 
+    <meta name="theme-color" content="#3F51B5">
+
     <link rel="shortcut icon" href="favicon.ico" />
 
-    <link rel='stylesheet' href='https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@1.1.0/dist/material-components-web.min.css">
 
     <style>
-        :root {
+        body {
             --mdc-theme-primary: #3f51b5;
             --mdc-theme-secondary: #f44336;
             --mdc-theme-on-primary: #ffffff;
             --mdc-theme-on-secondary: #ffffff;
+            background-color: #fafafa;
         }
         
-        :root body {
+        body .ribbon {
+            top: 0;
+            z-index: -1;
             background-color: #3f51b5;
+            width: 100%;
+            height: 10rem;
+            position: absolute;
         }
         
-        :root body main {
+        body .main-content {
             background-color: #ffffff;
             border-radius: 4px;
+            margin: 1.5rem;
+            padding: 2rem;
+            min-height: calc(100vh - 7rem);
+        }
+        
+        body .main-content .theme-toggle {
             position: absolute;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-            min-width: calc(100vw - 80px);
-            min-height: calc(100vh - 80px);
-            padding: 20px;
+            top: 0.5rem;
+            right: 3rem;
         }
         
-        :root body main .mdc-tab-bar {
-            padding-bottom: 20px;
+        body .main-content a {
+            color: #3f51b5;
         }
         
-        :root body main div.mdc-text-field.mdc-text-field--outlined {
-            width: 100%;
+        body .main-content::selection {
+            background-color: #3f51b5;
+            color: white;
+        }
+        
+        body .main-content #carbonads {
+            margin-bottom: 1rem;
+            float: right;
+            border-radius: 6px;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            font-family: Roboto, Helvetica, sans-serif;
+            line-height: 28px;
+            padding: 8px;
+            box-sizing: border-box;
+            transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        @media only screen and (max-width: 425px) {
+            body .main-content #carbonads {
+                width: 100%;
+            }
+        }
+        
+        body .main-content #carbonads:hover {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        }
+        
+        body .main-content #carbonads .carbon-wrap .carbon-img > img {
+            margin-right: 9px;
+            float: left;
+        }
+        
+        @media only screen and (max-width: 400px) {
+            body .main-content #carbonads .carbon-wrap .carbon-img > img {
+                width: auto;
+                max-width: 130px;
+                height: 50px;
+            }
+        }
+        
+        body .main-content #carbonads .carbon-wrap .carbon-text {
+            color: #637381;
+            font-weight: 300;
+            display: block;
+            font-size: 12px;
+            line-height: 15.96px;
+            margin-bottom: 0;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+        
+        body .main-content #carbonads .carbon-poweredby {
+            color: #c5cdd0;
+            font-size: 8px;
+            font-weight: 500;
+            line-height: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        
+        body.setting--dark {
+            background-color: #212121 !important;
+        }
+        
+        body.setting--dark .main-content {
+            color: white;
+            background-color: #303030;
+        }
+        
+        body.setting--dark .main-content a {
+            color: #5c6bc0;
+        }
+        
+        body.setting--dark .main-content::selection {
+            background-color: #c5cae9;
+            color: black;
+        }
+        
+        body.setting--animate-colours {
+            transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        body.setting--animate-colours .main-content,
+        body.setting--animate-colours a,
+        body.setting--animate-colours::selection {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: background-color, color;
         }
     </style>
 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
 </head>
 
 <body>
 
-    <main class="mdc-typography">
-        <h1 class="mdc-typography--headline1">Richienb Issues</h1>
-        <p class="mdc-typography--body1">This is a list of issues related to the Richienb repository.</p>
-        <ul id="issues-list" class="mdc-list mdc-list--two-line" aria-orientation="vertical">
-        </ul>
+    <div class="ribbon mdc-elevation--z4"></div>
+    <main class="main-content mdc-typography mdc-elevation--z8">
+        <script async src="https://cdn.carbonads.com/carbon.js?serve=CK7I6K3E&amp;placement=wwwrichie-bendallml" id="_carbonads_js"></script>
+        <button class="theme-toggle mdc-fab mdc-fab--mini" aria-label="Toggle Theme Settings" data-mdc-auto-init="MDCRipple">
+            <svg class="theme-toggle--svg mdc-fab__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M11 7l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L13 7h-2zm-.15 5.65L12 9l1.15 3.65h-2.3zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48z" />
+            </svg>
+        </button>
+        <h1 class="mdc-typography--headline2">MDC Document QuickStart</h1>
+        <p class="mdc-typography--body1"><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel quam elementum pulvinar etiam non quam lacus. Et odio pellentesque diam volutpat commodo sed egestas egestas. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Sed augue lacus viverra vitae congue eu. Nulla aliquet enim tortor at auctor urna nunc. Id velit ut tortor pretium viverra. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Porttitor eget dolor morbi non arcu risus quis. Eget duis at tellus at urna condimentum mattis. Volutpat odio facilisis mauris sit amet massa vitae. Pellentesque elit eget gravida cum sociis natoque penatibus. Amet nisl purus in mollis nunc sed id semper. Donec massa sapien faucibus et molestie. Id donec ultrices tincidunt arcu non. Ornare suspendisse sed nisi lacus sed viverra. At in tellus integer feugiat. Nunc sed id semper risus in hendrerit gravida.
+            <br>
+            <br> At tellus at urna condimentum mattis pellentesque id. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Massa tincidunt dui ut ornare lectus sit amet est placerat. Mauris rhoncus aenean vel elit scelerisque mauris. Id semper risus in hendrerit. Et malesuada fames ac turpis egestas sed. Quis ipsum suspendisse ultrices gravida. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Posuere urna nec tincidunt praesent. Ut sem viverra aliquet eget. Non tellus orci ac auctor augue mauris augue. Viverra justo nec ultrices dui sapien eget mi proin sed.
+            <br>
+            <br> Fusce ut placerat orci nulla pellentesque dignissim. Egestas erat imperdiet sed euismod nisi porta. Ridiculus mus mauris vitae ultricies leo integer malesuada. Lacus viverra vitae congue eu consequat ac felis donec. Faucibus in ornare quam viverra. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Mattis pellentesque id nibh tortor id. Quisque egestas diam in arcu cursus. Tellus in hac habitasse platea. Lacus laoreet non curabitur gravida arcu. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Congue eu consequat ac felis. A erat nam at lectus urna duis convallis. Pharetra convallis posuere morbi leo urna molestie at. Eget felis eget nunc lobortis mattis aliquam faucibus. Amet justo donec enim diam vulputate ut pharetra sit. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Gravida rutrum quisque non tellus orci ac auctor. Eget nunc scelerisque viverra mauris. Mi quis hendrerit dolor magna eget est.
+            <br>
+            <br> Nibh venenatis cras sed felis. Faucibus interdum posuere lorem ipsum. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Urna duis convallis convallis tellus. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Nunc sed augue lacus viverra vitae congue. Id faucibus nisl tincidunt eget nullam non nisi est sit. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Sit amet risus nullam eget felis eget nunc. Quam nulla porttitor massa id neque aliquam vestibulum.
+            <br>
+            <br> Sit amet nulla facilisi morbi tempus iaculis urna id. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Tristique senectus et netus et malesuada fames ac turpis egestas. Nibh nisl condimentum id venenatis. Auctor neque vitae tempus quam pellentesque nec. In mollis nunc sed id semper risus in hendrerit. Sagittis id consectetur purus ut faucibus. Iaculis nunc sed augue lacus viverra vitae. Orci nulla pellentesque dignissim enim sit amet. Faucibus purus in massa tempor nec feugiat. Sed augue lacus viverra vitae congue.</p>
+        <button class="mdc-fab mdc-fab--extended" data-mdc-auto-init="MDCRipple">
+            <svg class="mdc-fab__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            </svg>
+            <span class="mdc-fab__label">Action Button</span>
+        </button>
     </main>
-    <script async src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js'></script>
-    <script src='https://unpkg.com/material-components-web@0.41.1/dist/material-components-web.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@1.1.0/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        $.when($.getJSON("https://api.github.com/repos/Richienb/richienb/issues", function(data) {
-            for (var i = 0; i < data.length; i++) {
-                console.log(data[i]);
-                $("#issues-list").append('<a target="_blank" rel="noopener" href="' + data[i].html_url + '" class="mdc-list-item" data-mdc-auto-init="MDCRipple"><span class="mdc-list-item__text"><span class="mdc-list-item__primary-text">' + data[i].title + '</span><span class="mdc-list-item__secondary-text">' + data[i].body.substring(0, 75) + "...</span></span></a>");
+        mdc.autoInit();
+
+        String.prototype.cycle = function(arr) {
+            var i = arr.indexOf(this.toString());
+            if (i === -1) return undefined;
+            return arr[(i + 1) % arr.length];
+        };
+
+        var handleTheme = function handleTheme() {
+            switch (localStorage.getItem("theme")) {
+                case "light":
+                    $(".theme-toggle--svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z\"/><circle cx=\"12\" cy=\"12\" r=\"2.5\"/>");
+                    $("body").removeClass("setting--dark");
+                    break;
+
+                case "dark":
+                    $(".theme-toggle--svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z\"/>");
+                    $("body").addClass("setting--dark");
+                    break;
+
+                default:
+                    $(".theme-toggle--svg").html("<path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M11 7l-3.2 9h1.9l.7-2h3.2l.7 2h1.9L13 7h-2zm-.15 5.65L12 9l1.15 3.65h-2.3zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48z\"/>");
+                    var hours = new Date().getHours();
+                    $("body").toggleClass("setting--dark", hours <= 6 || hours >= 20 || window.matchMedia("(prefers-color-scheme: dark)").matches || window.matchMedia("(-ms-high-contrast: white-on-black)").matches);
             }
-        })).then(function() {
-            window.mdc.autoInit();
+        };
+
+        if (!localStorage.getItem("theme")) localStorage.setItem("theme", "auto");
+        handleTheme();
+        $("body").addClass("setting--animate-colours");
+        $(".theme-toggle").click(function() {
+            localStorage.setItem("theme", localStorage.getItem("theme").cycle(["auto", "light", "dark"]));
+            handleTheme();
         });
     </script>
 
