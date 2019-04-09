@@ -8,19 +8,18 @@ Main feedback and discussion repository
 
 ## Style guide
 
-Here is an [example](https://codepen.io/Richienb/full/wZwPxL) of the current cutting edge design standard (version 2.2) for services designed by Richie Bendall.
-
-As a fallback, an [older version](https://codepen.io/Richienb/full/gqLPzG) (version 2.0-rv2) can be used.
+Here is an [example](https://codepen.io/Richienb/full/PgbVZp) of the current cutting edge design standard (version 2.2-ext-jquery-rv1) for services designed by Richie Bendall.
 
 ### All versions
 
+- [Version 2.2-ext-jquery-rv1](https://codepen.io/Richienb/full/PgbVZp) (Light) (Latest)
 - [Version 2.2-ext-jquery](https://codepen.io/Richienb/full/oOLpmx) (Light)
-- [Version 2.2](https://codepen.io/Richienb/full/wZwPxL) (Light) (Latest)
+- [Version 2.2](https://codepen.io/Richienb/full/wZwPxL) (Light)
 - [Version 2.1-rv3](https://codepen.io/Richienb/full/dawzQR) (Light)
 - [Version 2.1-rv2](https://codepen.io/Richienb/full/VgPKpY) (Light)
 - [Version 2.1-rv1](https://codepen.io/Richienb/full/omYZNv) (Light)
 - [Version 2.1](https://codepen.io/Richienb/full/gqrEdR) (Light)
-- [Version 2.0-rv2](https://codepen.io/Richienb/full/gqLPzG) (Light) (Stable)
+- [Version 2.0-rv2](https://codepen.io/Richienb/full/gqLPzG) (Light)
 - [Version 2.0-rv1](https://codepen.io/Richienb/full/ZwOGRX) (Light)
 - [Version 2.0-ext-app](https://codepen.io/Richienb/full/pqJObB) (Quilt)
 - [Version 2.0](https://codepen.io/Richienb/full/wNwrrN) (Quilt)
