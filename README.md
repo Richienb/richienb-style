@@ -8,11 +8,12 @@ Main feedback and discussion repository
 
 ## Style guide
 
-Here is an [example](https://codepen.io/Richienb/full/mgMOoN) of the current cutting edge design standard (version 2.2-ext-jquery-rv2) for services designed by Richie Bendall.
+Here is an [example](https://codepen.io/Richienb/full/GLvxer) of the current cutting edge design standard (version 2.2-ext-jquery-rv3) for services designed by Richie Bendall.
 
 ### All versions
 
-- [Version 2.2-ext-jquery-rv2](https://codepen.io/Richienb/full/mgMOoN) (Light) (Latest)
+- [Version 2.2-ext-jquery-rv3](https://codepen.io/Richienb/full/GLvxer) (Light) (Latest)
+- [Version 2.2-ext-jquery-rv2](https://codepen.io/Richienb/full/mgMOoN) (Light)
 - [Version 2.2-ext-jquery-rv1](https://codepen.io/Richienb/full/PgbVZp) (Light)
 - [Version 2.2-ext-jquery](https://codepen.io/Richienb/full/oOLpmx) (Light)
 - [Version 2.2](https://codepen.io/Richienb/full/wZwPxL) (Light)
