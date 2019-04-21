@@ -8,11 +8,12 @@ Main feedback and discussion repository
 
 ## Style guide
 
-Here is an [example](https://codepen.io/Richienb/full/GLMGoG) of the current cutting edge design standard (version 2.2-ext-jquery-rv4) for services designed by Richie Bendall.
+Here is an [example](https://codepen.io/Richienb/full/VNdyay) of the current cutting edge design standard (version 2.3) for services designed by Richie Bendall.
 
 ### All versions
 
-- [Version 2.2-ext-jquery-rv4](https://codepen.io/Richienb/full/GLMGoG) (Light) (Latest)
+- [Version 2.3](https://codepen.io/Richienb/full/VNdyay) (Light) (Latest)
+- [Version 2.2-ext-jquery-rv4](https://codepen.io/Richienb/full/GLMGoG) (Light)
 - [Version 2.2-ext-jquery-rv3](https://codepen.io/Richienb/full/GLvxer) (Light)
 - [Version 2.2-ext-jquery-rv2](https://codepen.io/Richienb/full/mgMOoN) (Light)
 - [Version 2.2-ext-jquery-rv1](https://codepen.io/Richienb/full/PgbVZp) (Light)
