@@ -32,3 +32,7 @@ Here is an [example](https://codepen.io/Richienb/full/VNdyay) of the current cut
 - [Version 1.0](https://codepen.io/Richienb/full/XqObQO) (Droplet)
 - Version 0.2 - GitHub README.md preprocessor with Jekyll Cayman theme (Veteran)
 - Version 0.1 - GitHub README.md preprocessor (Veteran)
+
+### Implementations
+
+- [Jekyll Theme](https://github.com/Richienb/jekyll-theme-richienb)
