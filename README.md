@@ -37,3 +37,4 @@ Here is an [example](https://codepen.io/Richienb/full/VNdyay) of the current cut
 
 - [Jekyll Theme](https://github.com/Richienb/jekyll-theme-richienb)
 - [Google Slides Theme](https://docs.google.com/presentation/d/1urX5LgZrKivuFUnZYOpoRFMyse57LLE3832DMx4i3Hk/edit?usp=sharing)
+- [MIT License Theme](https://github.com/Richienb/mit-license-richienb-theme)
